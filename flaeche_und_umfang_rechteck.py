@@ -13,7 +13,7 @@ while falsche_eingabe:
 flaeche = a * b
 umfang = 2 * a + 2 * b
 
-print(f"Die Fläche des Rechtecks beträgt {flaeche} und die Breite beträgt {umfang}.")
+print(f"Die Fläche des Rechtecks beträgt {flaeche:.2f} und die Breite beträgt {umfang:.2f}.")
 
 
 # a = float(input("a: "))
