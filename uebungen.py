@@ -260,5 +260,7 @@ def multiplicationByTwo():
         n *= 2
         print(endTuple)
 
+# multiplicationByTwo()
 
-multiplicationByTwo()
+
+
