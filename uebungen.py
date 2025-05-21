@@ -253,9 +253,12 @@ def summe(a: float, b: float) -> (float, float):
     return a + b
 
 
-text = wiederhole_name("Tom", 3)
-print(text)
+def multiplicationByTwo():
+    n = 1
+    for i in range(10):
+        endTuple = (i + 1, n)
+        n *= 2
+        print(endTuple)
 
 
-mysum = summe(3, 4)
-print(mysum)
+multiplicationByTwo()
