@@ -1,3 +1,3 @@
 # Trololol
 
-**Wer das liest ist dumm!**
+**Wer das liest, ist dumm!**
