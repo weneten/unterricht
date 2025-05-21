@@ -1,3 +1,6 @@
+from collections import namedtuple
+
+
 # Zahlen prüfen, ob sie gerade bzw. ungerade sind
 def even_uneven():
     n = int(input("Gebe eine Zahl ein: "))
@@ -260,7 +263,20 @@ def multiplicationByTwo():
         n *= 2
         print(endTuple)
 
+
 # multiplicationByTwo()
+
+
+def multiplicationByTwoWithNamedTuples():
+    n = 1
+    endNumbers = namedtuple("Tuple", ["Index", "Number"])
+    for i in range(10):
+        t = endNumbers(i + 1, n)
+        n *= 2
+        print(t)
+
+# multiplicationByTwoWithNamedTuples()
+
 
 
 
