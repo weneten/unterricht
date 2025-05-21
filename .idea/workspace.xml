@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="da1907ae-556c-4bee-b5ae-b46e405d01a1" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> a2866e18362ed9eeaf6194a4fd8d05068a3de28c
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
