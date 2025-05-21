@@ -1,1 +1,1 @@
-python things from school
+Python things from school
