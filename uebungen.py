@@ -283,11 +283,14 @@ def namesSetFix():
     names1 = ["tom", "Jürgen", "ANNA", "max"]
     names2 = ["Tom", "  max ", "anna", "peter"]
 
-    fixedNames1 = {names.strip().lower().capitalize() for names in names1}
-    fixedNames2 = {names.strip().lower().capitalize() for names in names2}
+    fixNaming = lambda x: {names.strip().lower().capitalize() for names in x}
 
-    print("Duplicates: " + str(sorted(fixedNames1 & fixedNames2)).strip("[]").replace("'", ""))
-    print("All names: " + str(sorted(fixedNames1 | fixedNames2)).strip("[]").replace("'", ""))
+    fixedNames1, fixedNames2 = fixNaming(names1), fixNaming(names2)
+
+    formatNames = lambda x: str(sorted(x)).strip("[]").replace("'", "")
+
+    print("Duplicates: " + formatNames(fixedNames1 & fixedNames2))
+    print("All names: " + formatNames(fixedNames1 | fixedNames2))
 
 
 namesSetFix()
