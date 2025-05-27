@@ -252,7 +252,7 @@ def wiederhole_name(name: str, repeat: int) -> str:
     return name * repeat
 
 
-def summe(a: float, b: float) -> (float, float):
+def summe(a: float, b: float) -> (float):
     return a + b
 
 
@@ -290,4 +290,4 @@ def namesSetFix():
     print("All names: " + str(sorted(fixedNames1 | fixedNames2)).strip("[]").replace("'", ""))
 
 
-#namesSetFix()
+namesSetFix()
