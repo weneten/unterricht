@@ -305,7 +305,7 @@ def findNumberWithoutEnumerate():
         index += 1
 
 
-#findNumberWithoutEnumerate()
+# findNumberWithoutEnumerate()
 
 def findNumberWithEnumerate():
     numbers = [12, 3, 7, 99, 42]
@@ -315,4 +315,13 @@ def findNumberWithEnumerate():
             print(f"Die Zahl {lookFor} hat den Index: " + str(index))
 
 
-#findNumberWithEnumerate()
+# findNumberWithEnumerate()
+
+
+def findNumberWithIf():
+    numbers = [12, 3, 7, 99, 42]
+    lookFor = int(input("Welche Zahl soll gesucht werden? "))
+    if lookFor in numbers:
+        print(f"Die Zahl {lookFor} hat den Index: " + str(numbers.index(lookFor)))
+
+# findNumberWithIf()
