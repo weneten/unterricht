@@ -275,8 +275,8 @@ def multiplicationByTwoWithNamedTuples():
         n *= 2
         print(t)
 
-# multiplicationByTwoWithNamedTuples()
 
+# multiplicationByTwoWithNamedTuples()
 
 
 def namesSetFix():
@@ -285,7 +285,7 @@ def namesSetFix():
 
     fixedNames1 = {names.strip().lower().capitalize() for names in names1}
     fixedNames2 = {names.strip().lower().capitalize() for names in names2}
-    
+
     print("Duplicates: " + str(sorted(fixedNames1 & fixedNames2)).strip("[]").replace("'", ""))
     print("All names: " + str(sorted(fixedNames1 | fixedNames2)).strip("[]").replace("'", ""))
 
