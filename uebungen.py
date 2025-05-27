@@ -293,4 +293,26 @@ def namesSetFix():
     print("All names: " + formatNames(fixedNames1 | fixedNames2))
 
 
-namesSetFix()
+# namesSetFix()
+
+def findNumberWithoutEnumerate():
+    index = 0
+    numbers = [12, 3, 7, 99, 42]
+    lookFor = int(input("Welche Zahl soll gesucht werden? "))
+    for i in numbers:
+        if i == lookFor:
+            print(f"Die Zahl {lookFor} hat den Index: " + str(index))
+        index += 1
+
+
+#findNumberWithoutEnumerate()
+
+def findNumberWithEnumerate():
+    numbers = [12, 3, 7, 99, 42]
+    lookFor = int(input("Welche Zahl soll gesucht werden? "))
+    for index, i in enumerate(numbers):
+        if i == lookFor:
+            print(f"Die Zahl {lookFor} hat den Index: " + str(index))
+
+
+#findNumberWithEnumerate()
