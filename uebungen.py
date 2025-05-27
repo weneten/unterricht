@@ -280,3 +280,5 @@ def multiplicationByTwoWithNamedTuples():
 
 
 
+a: list[int | int] = [2,"sa"]
+print(a)
