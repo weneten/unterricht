@@ -280,8 +280,8 @@ def multiplicationByTwoWithNamedTuples():
 
 
 def namesSetFix():
-    names1 = {"tom", "Jürgen", "ANNA", "max"}
-    names2 = {"Tom", "  max ", "anna", "peter"}
+    names1 = ["tom", "Jürgen", "ANNA", "max"]
+    names2 = ["Tom", "  max ", "anna", "peter"]
 
     fixedNames1 = {names.strip().lower().capitalize() for names in names1}
     fixedNames2 = {names.strip().lower().capitalize() for names in names2}
