@@ -325,3 +325,35 @@ def findNumberWithIf():
         print(f"Die Zahl {lookFor} hat den Index: " + str(numbers.index(lookFor)))
 
 # findNumberWithIf()
+
+
+numbers = [9, 5, 2, 4, 7, 6, 3, 1, 10, 40, 50, 12, 70]
+
+def quickSort(zahlen, index_links, index_rechts):
+    def partition(zahlen, index_links, index_rechts):
+        pivot = zahlen[index_links]
+        i = index_links + 1
+        j = index_rechts
+
+        while i <= j:
+            while i <= index_rechts and zahlen[i] <= pivot:
+                i += 1
+            while j >= index_links and zahlen[j] > pivot:
+                j -= 1
+
+            if i < j:
+                zahlen[i], zahlen[j] = zahlen[j], zahlen[i]
+            else:
+                break
+
+        zahlen[index_links], zahlen[j] = zahlen[j], zahlen[index_links]
+        return j
+
+    if index_links < index_rechts:
+        pivot_index = partition(zahlen, index_links, index_rechts)
+        quickSort(zahlen, index_links, pivot_index - 1)
+        quickSort(zahlen, pivot_index + 1, index_rechts)
+
+print("Original list:", numbers)
+quickSort(numbers, 0, len(numbers) - 1)
+print("Sorted list:", numbers),
