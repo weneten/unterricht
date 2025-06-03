@@ -324,10 +324,9 @@ def findNumberWithIf():
     if lookFor in numbers:
         print(f"Die Zahl {lookFor} hat den Index: " + str(numbers.index(lookFor)))
 
+
 # findNumberWithIf()
 
-
-numbers = [9, 5, 2, 4, 7, 6, 3, 1, 10, 40, 50, 12, 70]
 
 def quickSort(zahlen, index_links, index_rechts):
     def partition(zahlen, index_links, index_rechts):
@@ -354,6 +353,8 @@ def quickSort(zahlen, index_links, index_rechts):
         quickSort(zahlen, index_links, pivot_index - 1)
         quickSort(zahlen, pivot_index + 1, index_rechts)
 
+
+numbers = [9, 5, 2, 4, 7, 6, 3, 1, 10, 40, 50, 12, 70]
 print("Original list:", numbers)
 quickSort(numbers, 0, len(numbers) - 1)
 print("Sorted list:", numbers),
