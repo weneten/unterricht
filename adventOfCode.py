@@ -12,8 +12,7 @@ def alchemicalReduction(s):
         else:
             i += 1
 
-    result = "".join(l)
-    #result = len(l)
+    result = len(l)
     print(result)
 
 
