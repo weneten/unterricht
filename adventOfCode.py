@@ -1,0 +1,17 @@
+def alchemicalReduction(s):
+    l = list(s)
+    i = 0
+
+    while i < len(l) - 1:
+        if l[i].lower() == l[i + 1].lower():
+            if l[i].isupper() and l[i + 1].islower() or l[i].islower() and l[i + 1].isupper():
+                del l[i:i + 2]
+                i = max(0, i - 1)
+        else:
+            i += 1
+
+    result = "".join(l)
+    print(result)
+
+
+alchemicalReduction("dabAcCaCBAcCcaDA")
